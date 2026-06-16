@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const popupBrandUrl = "https://www.gambinoslot.com/";
+const popupBrandUrl = "https://example.com/your-popup-affiliate-link";
 
 const offers = [
   {
@@ -76,71 +76,77 @@ export default function HomePage() {
   return (
     <main>
       {showPopup && (
-     {showPopup && (
-  <div className="popupOverlay">
-    <div className="popupModal compactPopup">
-      <button className="popupClose" onClick={closePopup} aria-label="Close popup">
-        ×
-      </button>
+        <div className="popupOverlay">
+          <div className="popupModal compactPopup">
+            <button
+              className="popupClose"
+              onClick={closePopup}
+              aria-label="Close popup"
+              type="button"
+            >
+              ×
+            </button>
 
-      <div className="popupDecor chipOne">◆</div>
-      <div className="popupDecor chipTwo">◈</div>
-      <div className="popupDecor chipThree">▰</div>
+            <div className="popupDecor chipOne">◆</div>
+            <div className="popupDecor chipTwo">◈</div>
+            <div className="popupDecor chipThree">▰</div>
 
-      <div className="compactPopupHero">
-        <div className="compactPopupTitle">
-          <span>Welcome</span>
-          <strong>Offer</strong>
-        </div>
+            <div className="compactPopupHero">
+              <div className="compactPopupTitle">
+                <span>Welcome</span>
+                <strong>Offer</strong>
+              </div>
 
-        <div className="compactAvatar">
-          <div className="avatarFace">🙂</div>
-          <div className="avatarSuit">RC</div>
-        </div>
-      </div>
+              <div className="compactAvatar">
+                <div className="avatarFace">🙂</div>
+                <div className="avatarSuit">RC</div>
+              </div>
+            </div>
 
-      <button className="singleOfferCard" onClick={goToPopupBrand}>
-        <div className="popularBadge">Limited Offer</div>
+            <button
+              className="singleOfferCard"
+              onClick={goToPopupBrand}
+              type="button"
+            >
+              <div className="popularBadge">Limited Offer</div>
 
-        <div className="singleOfferTop">
-          <div className="coinPile">
-            <div className="coin coinA"></div>
-            <div className="coin coinB"></div>
-            <div className="coin coinC"></div>
+              <div className="singleOfferTop">
+                <div className="coinPile">
+                  <div className="coin coinA"></div>
+                  <div className="coin coinB"></div>
+                  <div className="coin coinC"></div>
+                </div>
+
+                <div className="singleOfferText">
+                  <strong>Welcome Bonus</strong>
+                  <span>Social Casino Offer</span>
+                </div>
+              </div>
+
+              <div className="bonusLine">
+                <div>
+                  <b>Bonus Coins</b>
+                  <span>New player reward</span>
+                </div>
+
+                <div className="plusIcon">+</div>
+
+                <div>
+                  <b>Daily Rewards</b>
+                  <span>Where available</span>
+                </div>
+              </div>
+
+              <div className="popupPrice singlePrice">Visit Site</div>
+            </button>
+
+            <p className="popupTerms">
+              18+ only. Social casino entertainment. No purchase necessary where
+              available. Terms and location restrictions apply.
+            </p>
           </div>
-
-          <div className="singleOfferText">
-            <strong>Welcome Bonus</strong>
-            <span>Social Casino Offer</span>
-          </div>
         </div>
-
-        <div className="bonusLine">
-          <div>
-            <b>Bonus Coins</b>
-            <span>New player reward</span>
-          </div>
-
-          <div className="plusIcon">+</div>
-
-          <div>
-            <b>Daily Rewards</b>
-            <span>Where available</span>
-          </div>
-        </div>
-
-        <div className="popupPrice singlePrice">
-          Visit Site
-        </div>
-      </button>
-
-      <p className="popupTerms">
-        18+ only. Social casino entertainment. No purchase necessary where
-        available. Terms and location restrictions apply.
-      </p>
-    </div>
-  </div>
-)}
+      )}
 
       <header className="siteHeader">
         <div className="container headerInner">
@@ -272,17 +278,28 @@ export default function HomePage() {
               availability.
             </p>
 
+            <h2>Important Social Casino Notice</h2>
+            <p>
+              Social casino games are intended for entertainment. This site does
+              not operate games, process payments, provide gambling services, or
+              guarantee any outcome. Always review the operator&apos;s official
+              terms before creating an account.
+            </p>
+
             <h2>Affiliate Disclosure</h2>
             <p>
               Radar Casino contains affiliate links. We may earn a commission if
               you click a link and sign up with a partner brand, at no extra cost
-              to you.
+              to you. Rankings are editorial and may be influenced by commercial
+              relationships.
             </p>
 
             <h2>Responsible Play</h2>
             <p>
               18+ only, or legal age in your location. No purchase is necessary
-              to play where available. Void where prohibited.
+              to play where available. Void where prohibited. If gaming stops
+              being fun, take a break and seek support from appropriate local
+              resources.
             </p>
           </article>
 
