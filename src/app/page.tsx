@@ -15,7 +15,7 @@ const offers = [
     features: [
       "Daily reward opportunities",
       "Mobile-friendly experience",
-      "Gold Coin / Sweeps Coin style gameplay",
+      "Gold Coin style gameplay",
     ],
     url: "https://example.com/your-affiliate-link-1",
   },
