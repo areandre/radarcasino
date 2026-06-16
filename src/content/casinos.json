@@ -1,16 +1,16 @@
 [
   {
-    "slug": "lucky-sweeps",
-    "name": "Lucky Sweeps",
+    "slug": "lucky-Streak",
+    "name": "Lucky Streak",
     "logoText": "LS",
     "headline": "Beginner-friendly lobby with a strong welcome package.",
     "rating": 4.8,
     "rank": 1,
-    "bonus": "10,000 GC + 5 SC",
+    "bonus": "10,000 GC",
     "bonusLabel": "Welcome package",
     "cta": "Claim Bonus",
-    "affiliateUrl": "https://example.com/lucky-sweeps?ref=YOUR_ID",
-    "officialUrl": "https://example.com/lucky-sweeps",
+    "affiliateUrl": "",
+    "officialUrl": "",
     "restrictedStates": [
       "WA",
       "ID",
@@ -40,7 +40,7 @@
       "trust": 8.9
     },
     "review": {
-      "summary": "Lucky Sweeps is a placeholder review entry designed to show how your real casino review pages should look. Replace this with original testing notes, current bonus details, screenshots, terms, and affiliate tracking links.",
+      "summary": "Lucky Streak is a placeholder review entry designed to show how your real casino review pages should look. Replace this with original testing notes, current bonus details, screenshots, terms, and affiliate tracking links.",
       "experience": "The layout should explain registration, daily rewards, available games, mobile usability, customer support, and who the casino is best for.",
       "banking": "Always verify redemption minimums, processing times, identity checks, and payment methods directly with the operator before publishing.",
       "games": "Describe the game library with real categories and provider information only after checking the operator's site.",
@@ -54,7 +54,7 @@
     "headline": "Good choice for frequent promo hunters and daily login rewards.",
     "rating": 4.6,
     "rank": 2,
-    "bonus": "20,000 GC + 2 SC",
+    "bonus": "20,000 GC",
     "bonusLabel": "New player bonus",
     "cta": "Get Bonus",
     "affiliateUrl": "https://example.com/gold-coin-harbor?ref=YOUR_ID",
