@@ -17,7 +17,7 @@ const offers = [
       "Mobile-friendly experience",
       "Gold Coin style gameplay",
     ],
-    url: "https://www.spinblitz.com",
+    url: "https://spinblitz.com",
   },
   {
     rank: 2,
