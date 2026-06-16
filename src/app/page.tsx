@@ -76,52 +76,71 @@ export default function HomePage() {
   return (
     <main>
       {showPopup && (
-        <div className="popupOverlay">
-          <div className="popupModal">
-            <button className="popupClose" onClick={closePopup}>
-              ×
-            </button>
+     {showPopup && (
+  <div className="popupOverlay">
+    <div className="popupModal compactPopup">
+      <button className="popupClose" onClick={closePopup} aria-label="Close popup">
+        ×
+      </button>
 
-            <div className="popupHero">
-              <div className="popupTitle">
-                <span>Special Social Casino Offer</span>
-                <strong>Welcome Bonus</strong>
-              </div>
+      <div className="popupDecor chipOne">◆</div>
+      <div className="popupDecor chipTwo">◈</div>
+      <div className="popupDecor chipThree">▰</div>
 
-              <div className="popupCharacter">RC</div>
-            </div>
+      <div className="compactPopupHero">
+        <div className="compactPopupTitle">
+          <span>Welcome</span>
+          <strong>Offer</strong>
+        </div>
 
-            <div className="popupCards">
-              <button className="popupCard" onClick={goToPopupBrand}>
-                <div className="coinStack">25</div>
-                <strong>25 Coins</strong>
-                <span>+ Bonus Cards</span>
-                <div className="popupPrice">$9.99</div>
-              </button>
+        <div className="compactAvatar">
+          <div className="avatarFace">🙂</div>
+          <div className="avatarSuit">RC</div>
+        </div>
+      </div>
 
-              <button className="popupCard popular" onClick={goToPopupBrand}>
-                <div className="popularBadge">Most Popular</div>
-                <div className="coinStack">30</div>
-                <strong>30 Coins</strong>
-                <span>+ Bonus Cards</span>
-                <div className="popupPrice">$14.99</div>
-              </button>
+      <button className="singleOfferCard" onClick={goToPopupBrand}>
+        <div className="popularBadge">Limited Offer</div>
 
-              <button className="popupCard" onClick={goToPopupBrand}>
-                <div className="coinStack">35</div>
-                <strong>35 Coins</strong>
-                <span>+ Bonus Cards</span>
-                <div className="popupPrice">$19.99</div>
-              </button>
-            </div>
+        <div className="singleOfferTop">
+          <div className="coinPile">
+            <div className="coin coinA"></div>
+            <div className="coin coinB"></div>
+            <div className="coin coinC"></div>
+          </div>
 
-            <p className="popupTerms">
-              18+ only. Social casino entertainment. No purchase necessary where
-              available. Terms and location restrictions apply.
-            </p>
+          <div className="singleOfferText">
+            <strong>Welcome Bonus</strong>
+            <span>Social Casino Offer</span>
           </div>
         </div>
-      )}
+
+        <div className="bonusLine">
+          <div>
+            <b>Bonus Coins</b>
+            <span>New player reward</span>
+          </div>
+
+          <div className="plusIcon">+</div>
+
+          <div>
+            <b>Daily Rewards</b>
+            <span>Where available</span>
+          </div>
+        </div>
+
+        <div className="popupPrice singlePrice">
+          Visit Site
+        </div>
+      </button>
+
+      <p className="popupTerms">
+        18+ only. Social casino entertainment. No purchase necessary where
+        available. Terms and location restrictions apply.
+      </p>
+    </div>
+  </div>
+)}
 
       <header className="siteHeader">
         <div className="container headerInner">
