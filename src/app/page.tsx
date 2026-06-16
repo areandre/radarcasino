@@ -7,7 +7,7 @@ const popupBrandUrl = "https://sweetsweeps.com";
 const offers = [
   {
     rank: 1,
-    brand: "Brand One",
+    brand: "SpinBlitz",
     logo: "B1",
     label: "Top Social Casino Pick",
     bonus: "Welcome offer available",
@@ -21,7 +21,7 @@ const offers = [
   },
   {
     rank: 2,
-    brand: "Brand Two",
+    brand: "Gambino",
     logo: "B2",
     label: "Popular New Player Offer",
     bonus: "New player reward available",
@@ -31,11 +31,11 @@ const offers = [
       "Simple signup flow",
       "Promotional coin gameplay where available",
     ],
-    url: "https://sweetsweeps.com/",
+    url: "https://gambinoslot.com//",
   },
   {
     rank: 3,
-    brand: "Brand Three",
+    brand: "SweetSweet",
     logo: "B3",
     label: "Daily Rewards",
     bonus: "Daily bonus available",
