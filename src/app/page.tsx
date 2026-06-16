@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const popupBrandUrl = "https://www.gambinoslot.com/";
+const popupBrandUrl = "https://sweetsweeps.com";
 
 const offers = [
   {
