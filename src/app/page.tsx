@@ -1,3 +1,9 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+const popupBrandUrl = "https://example.com/your-popup-affiliate-link";
+
 const offers = [
   {
     rank: 1,
@@ -44,8 +50,79 @@ const offers = [
 ];
 
 export default function HomePage() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const hasClosedPopup = sessionStorage.getItem("radar_popup_closed");
+
+    if (!hasClosedPopup) {
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  function closePopup() {
+    sessionStorage.setItem("radar_popup_closed", "true");
+    setShowPopup(false);
+  }
+
+  function goToPopupBrand() {
+    window.open(popupBrandUrl, "_blank", "noopener,noreferrer");
+  }
+
   return (
     <main>
+      {showPopup && (
+        <div className="popupOverlay">
+          <div className="popupModal">
+            <button className="popupClose" onClick={closePopup}>
+              ×
+            </button>
+
+            <div className="popupHero">
+              <div className="popupTitle">
+                <span>Special Social Casino Offer</span>
+                <strong>Welcome Bonus</strong>
+              </div>
+
+              <div className="popupCharacter">RC</div>
+            </div>
+
+            <div className="popupCards">
+              <button className="popupCard" onClick={goToPopupBrand}>
+                <div className="coinStack">25</div>
+                <strong>25 Coins</strong>
+                <span>+ Bonus Cards</span>
+                <div className="popupPrice">$9.99</div>
+              </button>
+
+              <button className="popupCard popular" onClick={goToPopupBrand}>
+                <div className="popularBadge">Most Popular</div>
+                <div className="coinStack">30</div>
+                <strong>30 Coins</strong>
+                <span>+ Bonus Cards</span>
+                <div className="popupPrice">$14.99</div>
+              </button>
+
+              <button className="popupCard" onClick={goToPopupBrand}>
+                <div className="coinStack">35</div>
+                <strong>35 Coins</strong>
+                <span>+ Bonus Cards</span>
+                <div className="popupPrice">$19.99</div>
+              </button>
+            </div>
+
+            <p className="popupTerms">
+              18+ only. Social casino entertainment. No purchase necessary where
+              available. Terms and location restrictions apply.
+            </p>
+          </div>
+        </div>
+      )}
+
       <header className="siteHeader">
         <div className="container headerInner">
           <div className="brand">
@@ -111,8 +188,8 @@ export default function HomePage() {
             <p>Radar Casino Rankings</p>
             <h2>Top Social Casino Offers</h2>
             <span>
-              These are comparison cards for PPC traffic. Replace the placeholder
-              brands with your approved partners and affiliate links.
+              Replace the placeholder brands with your approved partners and
+              affiliate links.
             </span>
           </div>
 
@@ -176,28 +253,17 @@ export default function HomePage() {
               availability.
             </p>
 
-            <h2>Important Social Casino Notice</h2>
-            <p>
-              Social casino games are intended for entertainment. This site does
-              not operate games, process payments, provide gambling services, or
-              guarantee any outcome. Always review the operator&apos;s official
-              terms before creating an account.
-            </p>
-
             <h2>Affiliate Disclosure</h2>
             <p>
               Radar Casino contains affiliate links. We may earn a commission if
               you click a link and sign up with a partner brand, at no extra cost
-              to you. Rankings are editorial and may be influenced by commercial
-              relationships.
+              to you.
             </p>
 
             <h2>Responsible Play</h2>
             <p>
               18+ only, or legal age in your location. No purchase is necessary
-              to play where available. Void where prohibited. If gaming stops
-              being fun, take a break and seek support from appropriate local
-              resources.
+              to play where available. Void where prohibited.
             </p>
           </article>
 
