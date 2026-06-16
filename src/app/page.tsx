@@ -77,9 +77,9 @@ export default function HomePage() {
     <main>
       {showPopup && (
         <div className="popupOverlay">
-          <div className="popupModal compactPopup">
+          <div className="cleanPopup">
             <button
-              className="popupClose"
+              className="cleanPopupClose"
               onClick={closePopup}
               aria-label="Close popup"
               type="button"
@@ -87,62 +87,34 @@ export default function HomePage() {
               ×
             </button>
 
-            <div className="popupDecor chipOne">◆</div>
-            <div className="popupDecor chipTwo">◈</div>
-            <div className="popupDecor chipThree">▰</div>
+            <div className="cleanPopupBadge">Welcome Offer</div>
 
-            <div className="compactPopupHero">
-              <div className="compactPopupTitle">
-                <span>Welcome</span>
-                <strong>Offer</strong>
-              </div>
+            <div className="cleanPopupLogo">RC</div>
 
-              <div className="compactAvatar">
-                <div className="avatarFace">🙂</div>
-                <div className="avatarSuit">RC</div>
-              </div>
+            <h2>Exclusive Social Casino Offer</h2>
+
+            <p className="cleanPopupSubtitle">
+              New players can explore a featured social casino partner with a
+              welcome reward available where permitted.
+            </p>
+
+            <div className="cleanOfferBox">
+              <span>Featured Offer</span>
+              <strong>Welcome Bonus Available</strong>
+              <small>18+ only · Terms apply · Availability varies by location</small>
             </div>
 
             <button
-              className="singleOfferCard"
+              className="cleanPopupButton"
               onClick={goToPopupBrand}
               type="button"
             >
-              <div className="popularBadge">Limited Offer</div>
-
-              <div className="singleOfferTop">
-                <div className="coinPile">
-                  <div className="coin coinA"></div>
-                  <div className="coin coinB"></div>
-                  <div className="coin coinC"></div>
-                </div>
-
-                <div className="singleOfferText">
-                  <strong>Welcome Bonus</strong>
-                  <span>Social Casino Offer</span>
-                </div>
-              </div>
-
-              <div className="bonusLine">
-                <div>
-                  <b>Bonus Coins</b>
-                  <span>New player reward</span>
-                </div>
-
-                <div className="plusIcon">+</div>
-
-                <div>
-                  <b>Daily Rewards</b>
-                  <span>Where available</span>
-                </div>
-              </div>
-
-              <div className="popupPrice singlePrice">Visit Site</div>
+              Visit Site
             </button>
 
-            <p className="popupTerms">
-              18+ only. Social casino entertainment. No purchase necessary where
-              available. Terms and location restrictions apply.
+            <p className="cleanPopupTerms">
+              Social casino entertainment only. No purchase necessary where
+              available. Radar Casino may earn a commission from partner links.
             </p>
           </div>
         </div>
