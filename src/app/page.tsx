@@ -17,7 +17,7 @@ const offers = [
       "Mobile-friendly experience",
       "Gold Coin style gameplay",
     ],
-    url: "https://example.com/your-affiliate-link-1",
+    url: "https://www.spinblitz.com",
   },
   {
     rank: 2,
@@ -31,7 +31,7 @@ const offers = [
       "Simple signup flow",
       "Promotional coin gameplay where available",
     ],
-    url: "https://example.com/your-affiliate-link-2",
+    url: "https://sweetsweeps.com/",
   },
   {
     rank: 3,
