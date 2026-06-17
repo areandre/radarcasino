@@ -8,7 +8,7 @@ const offers = [
   {
     rank: 1,
     brand: "SpinBlitz.com",
-    logo: "B1",
+    logo: "public/brands/idHUQbcoI6_logos.png",
     label: "Top Social Casino Pick",
     bonus: "Welcome offer available",
     rating: "9.8",
