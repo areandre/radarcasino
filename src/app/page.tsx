@@ -7,45 +7,73 @@ const popupBrandUrl = "https://sweetsweeps.com";
 const offers = [
   {
     rank: 1,
-    brand: "SpinBlitz.com",
-    logo: "/brands/idHUQbcoI6_logos.png",
-    label: "Top Social Casino Pick",
-    bonus: "Welcome offer available",
+    brand: "Gambino Slots",
+    logo: "/brands/gambino.png",
+    label: "Featured Social Casino Brand",
+    bonus: "Welcome reward available",
     rating: "9.8",
     features: [
-      "Daily reward opportunities",
-      "Mobile-friendly experience",
-      "Gold Coin style gameplay",
+      "Free-to-play social casino slots",
+      "Daily rewards where available",
+      "Mobile-friendly gameplay",
     ],
-    url: "https://spinblitz.com",
+    url: "https://www.gambinoslot.com/",
   },
   {
     rank: 2,
-    brand: "GambinoSlot.com",
-    logo: "B2",
-    label: "Popular New Player Offer",
-    bonus: "New player reward available",
-    rating: "9.6",
+    brand: "Slotomania",
+    logo: "/brands/slotomania.png",
+    label: "Popular Free Slots Brand",
+    bonus: "Free coins and bonuses available",
+    rating: "9.7",
     features: [
-      "Large game selection",
-      "Simple signup flow",
-      "Promotional coin gameplay where available",
+      "Large free slot game selection",
+      "Social gaming community features",
+      "Entertainment-only gameplay",
     ],
-    url: "https://gambinoslot.com//",
+    url: "https://www.slotomania.com/",
   },
   {
     rank: 3,
-    brand: "Brand3",
-    logo: "B3",
-    label: "Daily Rewards",
-    bonus: "Daily bonus available",
+    brand: "House of Fun",
+    logo: "/brands/house-of-fun.png",
+    label: "Free Social Slots",
+    bonus: "Free coins and spins available",
+    rating: "9.5",
+    features: [
+      "Free casino-style slot games",
+      "In-game coins only",
+      "Browser and mobile play options",
+    ],
+    url: "https://www.houseoffun.com/",
+  },
+  {
+    rank: 4,
+    brand: "DoubleDown Casino",
+    logo: "/brands/doubledown.png",
+    label: "Classic Social Casino",
+    bonus: "Free chip bonus available",
     rating: "9.4",
     features: [
-      "Entertainment-focused games",
-      "Fast account setup",
-      "Terms and location rules apply",
+      "Free online slots and table-style games",
+      "Daily free chip options",
+      "Long-running social casino brand",
     ],
-    url: "https://example.com/your-affiliate-link-3",
+    url: "https://www.doubledowncasino.com/",
+  },
+  {
+    rank: 5,
+    brand: "SpinQuest",
+    logo: "/brands/spinquest.png",
+    label: "Play-for-Fun Social Casino",
+    bonus: "Free-to-play social gaming",
+    rating: "9.2",
+    features: [
+      "Play-for-fun platform",
+      "No real-money gambling offered",
+      "18+ social gaming experience",
+    ],
+    url: "https://spinquest.com/",
   },
 ];
 
@@ -192,7 +220,12 @@ export default function HomePage() {
 
           <div className="offersList">
             {offers.map((offer) => (
-              <article className="offerCard" key={offer.brand}>
+              <article
+  className={`offerCard ${
+    offer.rank === 1 ? "offerCardHero" : offer.rank === 2 ? "offerCardSecond" : ""
+  }`}
+  key={offer.brand}
+>
                 <div className="rankCol">
                   <div className="rankNumber">#{offer.rank}</div>
                   <div className="score">{offer.rating}</div>
