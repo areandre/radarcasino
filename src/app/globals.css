@@ -707,3 +707,187 @@ a {
   }
 }
 
+/* Tiered offer-card styling */
+
+.offerCardHero {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #13c987 !important;
+  background:
+    radial-gradient(circle at top left, rgba(19, 201, 135, 0.24), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.16), transparent 32%),
+    #ffffff;
+  box-shadow:
+    0 24px 60px rgba(19, 201, 135, 0.22),
+    0 10px 28px rgba(15, 23, 42, 0.12) !important;
+}
+
+.offerCardHero::before {
+  content: "BEST OVERALL";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #13c987, #2563eb);
+  color: white;
+  font-size: 12px;
+  font-weight: 1000;
+  letter-spacing: 0.08em;
+  padding: 9px 18px;
+  border-radius: 0 0 16px 0;
+  z-index: 2;
+}
+
+.offerCardHero .rankNumber {
+  color: #065f46;
+  font-size: 22px;
+}
+
+.offerCardHero .score {
+  color: #047857;
+  font-size: 36px;
+}
+
+.offerCardHero .logoBox {
+  width: 78px;
+  height: 78px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #08111f, #172554);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.22);
+}
+
+.offerCardHero .casinoCol h3 {
+  font-size: 28px;
+  letter-spacing: -0.6px;
+}
+
+.offerCardHero .casinoCol p {
+  color: #047857;
+  font-weight: 900;
+}
+
+.offerCardHero .bonusCol {
+  background: rgba(19, 201, 135, 0.08);
+  border: 1px solid rgba(19, 201, 135, 0.24);
+}
+
+.offerCardHero .bonusCol strong {
+  font-size: 26px;
+}
+
+.offerCardHero .featuresCol li {
+  font-weight: 800;
+}
+
+.offerCardHero .ctaCol a {
+  background: linear-gradient(180deg, #16e39a, #10b981);
+  color: #032316;
+  font-size: 20px;
+  padding: 18px 18px;
+  box-shadow: 0 9px 0 #047857;
+}
+
+.offerCardHero .ctaCol a::after {
+  content: " →";
+}
+
+.offerCardSecond {
+  position: relative;
+  border: 2px solid #93c5fd !important;
+  background:
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 34%),
+    #ffffff;
+  box-shadow:
+    0 18px 42px rgba(37, 99, 235, 0.13),
+    0 10px 26px rgba(15, 23, 42, 0.08) !important;
+}
+
+.offerCardSecond::before {
+  content: "POPULAR";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #2563eb;
+  color: white;
+  font-size: 11px;
+  font-weight: 1000;
+  letter-spacing: 0.08em;
+  padding: 8px 15px;
+  border-radius: 0 0 14px 0;
+  z-index: 2;
+}
+
+.offerCardSecond .score {
+  color: #2563eb;
+  font-size: 33px;
+}
+
+.offerCardSecond .logoBox {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+}
+
+.offerCardSecond .casinoCol h3 {
+  font-size: 25px;
+}
+
+.offerCardSecond .bonusCol {
+  background: rgba(37, 99, 235, 0.06);
+  border: 1px solid rgba(37, 99, 235, 0.18);
+}
+
+.offerCardSecond .ctaCol a {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 7px 0 #1e40af;
+}
+
+/* Make normal cards slightly calmer so #1 and #2 stand out */
+.offerCard:not(.offerCardHero):not(.offerCardSecond) {
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+.offerCard:not(.offerCardHero):not(.offerCardSecond) .ctaCol a {
+  background: #13c987;
+}
+
+/* Mobile tiered styling */
+@media (max-width: 759px) {
+  .offerCardHero,
+  .offerCardSecond {
+    padding-top: 48px;
+  }
+
+  .offerCardHero::before,
+  .offerCardSecond::before {
+    font-size: 10px;
+    padding: 8px 13px;
+  }
+
+  .offerCardHero .logoBox {
+    width: 74px;
+    height: 74px;
+  }
+
+  .offerCardHero .casinoCol h3 {
+    font-size: 26px;
+  }
+
+  .offerCardHero .bonusCol strong {
+    font-size: 24px;
+  }
+
+  .offerCardHero .ctaCol a {
+    font-size: 20px;
+    padding: 18px;
+  }
+
+  .offerCardSecond .logoBox {
+    width: 68px;
+    height: 68px;
+  }
+
+  .offerCardSecond .casinoCol h3 {
+    font-size: 24px;
+  }
+}
