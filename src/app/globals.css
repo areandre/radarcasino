@@ -891,3 +891,24 @@ a {
     font-size: 24px;
   }
 }
+
+/* Fix Gambino popup logo size */
+
+.cleanPopupLogo {
+  width: 86px;
+  height: 86px;
+  margin: 0 auto 18px;
+  border-radius: 22px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.popupBrandLogo {
+  max-width: 76px;
+  max-height: 76px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
