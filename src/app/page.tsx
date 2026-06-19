@@ -103,50 +103,54 @@ export default function HomePage() {
 
   return (
     <main>
-      {showPopup && (
-        <div className="popupOverlay">
-          <div className="cleanPopup">
-            <button
-              className="cleanPopupClose"
-              onClick={closePopup}
-              aria-label="Close popup"
-              type="button"
-            >
-              ×
-            </button>
+    {showPopup && (
+  <div className="popupOverlay" role="dialog" aria-modal="true">
+    <div className="cleanPopup">
+      <button
+        className="cleanPopupClose"
+        onClick={() => setShowPopup(false)}
+        type="button"
+        aria-label="Close popup"
+      >
+        ×
+      </button>
 
-            <div className="cleanPopupBadge">Welcome Offer</div>
+      <div className="cleanPopupBadge">#1 Social Casino Pick</div>
 
-            <div className="cleanPopupLogo">RC</div>
+      <div className="cleanPopupLogo">
+        <img
+          src="/brands/gambino.png"
+          alt="Gambino Slots logo"
+          className="popupBrandLogo"
+        />
+      </div>
 
-            <h2>Exclusive Social Casino Offer</h2>
+      <h2>Gambino Slots</h2>
 
-            <p className="cleanPopupSubtitle">
-              New players can explore a featured social casino partner with a
-              welcome reward available where permitted.
-            </p>
+      <p>
+        Gambino Slots is our featured social casino pick, offering free-to-play
+        slot-style entertainment, daily rewards, and a mobile-friendly experience.
+      </p>
 
-            <div className="cleanOfferBox">
-              <span>Featured Offer</span>
-              <strong>Welcome Bonus Available</strong>
-              <small>18+ only · Terms apply · Availability varies by location</small>
-            </div>
+      <div className="cleanOfferBox">
+        <span>Gambino Slots Featured Offer</span>
+        <strong>Welcome reward available</strong>
+      </div>
 
-            <button
-              className="cleanPopupButton"
-              onClick={goToPopupBrand}
-              type="button"
-            >
-              Visit Site
-            </button>
+      <button
+        className="cleanPopupButton"
+        onClick={goToPopupBrand}
+        type="button"
+      >
+        Visit Gambino Slots
+      </button>
 
-            <p className="cleanPopupTerms">
-              Social casino entertainment only. No purchase necessary where
-              available. Radar Casino may earn a commission from partner links.
-            </p>
-          </div>
-        </div>
-      )}
+      <p className="cleanPopupTerms">
+        18+ only. Terms apply. Social casino entertainment only.
+      </p>
+    </div>
+  </div>
+)}
 
       <header className="siteHeader">
         <div className="container headerInner">
