@@ -170,46 +170,7 @@ export default function HomePage() {
         </div>
       </header>
 
-      <section className="hero">
-        <div className="container heroGrid">
-          <div className="heroContent">
-            <div className="breadcrumb">
-              Home <span>›</span> Social Casino Offers
-            </div>
-
-            <h1>Best Social Casino Offers Available Now</h1>
-
-            <p className="intro">
-              Compare selected social casino brands, welcome rewards, daily
-              bonuses, and entertainment-focused gameplay options. Radar Casino
-              does not provide gambling services.
-            </p>
-
-            <div className="metaBox">
-              <div>
-                <strong>Updated:</strong> Today
-              </div>
-              <div>
-                <strong>Category:</strong> Social Casino
-              </div>
-              <div>
-                <strong>Notice:</strong> 18+ only. Terms apply.
-              </div>
-            </div>
-          </div>
-
-          <aside className="heroPanel">
-            <h2>Quick Checklist</h2>
-            <ul>
-              <li>Welcome offer clarity</li>
-              <li>Daily reward availability</li>
-              <li>Mobile experience</li>
-              <li>Location restrictions</li>
-              <li>No purchase necessary terms</li>
-            </ul>
-          </aside>
-        </div>
-      </section>
+ 
 
       <section id="offers" className="offersWrap">
         <div className="container">
@@ -273,6 +234,47 @@ export default function HomePage() {
           </div>
 
           <div className="showMore">More social casino offers coming soon</div>
+        </div>
+      </section>
+
+           <section className="hero">
+        <div className="container heroGrid">
+          <div className="heroContent">
+            <div className="breadcrumb">
+              Home <span>›</span> Social Casino Offers
+            </div>
+
+            <h1>Best Social Casino Offers Available Now</h1>
+
+            <p className="intro">
+              Compare selected social casino brands, welcome rewards, daily
+              bonuses, and entertainment-focused gameplay options. Radar Casino
+              does not provide gambling services.
+            </p>
+
+            <div className="metaBox">
+              <div>
+                <strong>Updated:</strong> Today
+              </div>
+              <div>
+                <strong>Category:</strong> Social Casino
+              </div>
+              <div>
+                <strong>Notice:</strong> 18+ only. Terms apply.
+              </div>
+            </div>
+          </div>
+
+          <aside className="heroPanel">
+            <h2>Quick Checklist</h2>
+            <ul>
+              <li>Welcome offer clarity</li>
+              <li>Daily reward availability</li>
+              <li>Mobile experience</li>
+              <li>Location restrictions</li>
+              <li>No purchase necessary terms</li>
+            </ul>
+          </aside>
         </div>
       </section>
 
